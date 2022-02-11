@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/GATE_WAY/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Jwt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Payment_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fileuploadanddownload/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/profile/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartContract/src/main/java" charset="UTF-8" />
+  </component>
+</project>

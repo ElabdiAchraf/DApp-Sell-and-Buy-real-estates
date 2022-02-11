@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  db:
+    container_name: mongo-db-smart-contract
+    image: mongo
+    networks:
+      - mongo-compose-network
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data:/data/db1
+  mongo-express:
+    container_name: mongo-express-smart-contract
+    image: mongo-express
+    depends_on:
+      - db
+    networks:
+      - mongo-compose-network
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo-db-smart-contract
+    ports:
+      - '8090:8081'
+    volumes:
+      - ./data:/data/db
+
+networks:
+  mongo-compose-network:
+    driver: bridge
+
+
