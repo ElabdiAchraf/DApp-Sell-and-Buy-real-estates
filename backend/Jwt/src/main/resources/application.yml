@@ -1,0 +1,36 @@
+server:
+  port: 9902
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:9002/JwtMicroservice
+    password:
+    username: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  mail:
+    protocol: smtp
+    host: smtp.mailtrap.io
+    port: 2525
+    username: ADD_USER_NAME
+    password: ADD_PASSWORD
+    properties:
+      mail:
+        smpt:
+          auth: true
+          starttls:
+            enable: true
+
+  application:
+    name: AUTH-SERVICE
+  cloud:
+    discovery:
+      enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true
+
